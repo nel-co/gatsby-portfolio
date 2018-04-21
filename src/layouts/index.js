@@ -18,6 +18,7 @@ const TemplateWrapper = ({ children }) => (
       meta={[
         { name: 'description', content: 'A Front-End Developer working in South Carolina.' },
         { name: 'keywords', content: 'Front end developer, web developer, web design, javascript, html, south carolina, greenville, spartanburg, upstate, charlotte, asheville, north carolina, remote' },
+        { name: 'theme-color', content: '#5bcb70'}
       ]}
     />
     <Border />
