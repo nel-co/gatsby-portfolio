@@ -17,7 +17,7 @@ const Footer = () => (
     <div className="footer-bottom">
       <div>
         <span>© 2018 HEYIMNELSON.COM</span>
-        <span>Built with <a target="_blank" href="https://www.gatsbyjs.org/">Gatsby.js</a> | Hosted on <a href="#">Github</a></span>
+        <span>Built with <a target="_blank" href="https://www.gatsbyjs.org/">Gatsby.js</a></span>
       </div>
     </div>
   </footer>
