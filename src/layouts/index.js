@@ -14,7 +14,7 @@ const TemplateWrapper = ({ children }) => (
       title="Hey I'm Nelson | Front-End Developer"
       link={[
         { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css' },
-      ]}  
+      ]}
       meta={[
         { name: 'description', content: 'A Front-End Developer working in South Carolina.' },
         { name: 'keywords', content: 'Front end developer, web developer, web design, javascript, html, south carolina, greenville, spartanburg, upstate, charlotte, asheville, north carolina, remote' },
