@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import ScrollReveal from 'scrollreveal'
+// import ScrollReveal from 'scrollreveal'
 
 import './Portfolio.css'
 
@@ -13,13 +13,15 @@ import Wash from '../../content/img/p-wash.png'
 import Projects from '../../content/img/p-projects.png'
 
 export default class PortfolioItems extends React.PureComponent {
-  componentDidMount = () => {
-    window.sr = ScrollReveal();
-    const portfolioItems = document.querySelectorAll('.portfolio-box');
-    sr.reveal(portfolioItems, {
-      reset: 'true'
-    });
-  }
+  // componentDidMount = () => {
+  //   if(typeof window !== `undefined`) {
+  //     window.sr = ScrollReveal();
+  //     const portfolioItems = document.querySelectorAll('.portfolio-box');
+  //     sr.reveal(portfolioItems, {
+  //       reset: 'true'
+  //     });
+  //   }
+  // }
   
   render() {
     return (
