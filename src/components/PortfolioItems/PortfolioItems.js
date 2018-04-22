@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 // For build
 const isBrowser = typeof window !== 'undefined'
-const MyScroll = isBrowser ? import ('scrollreveal') : undefined
+const MyScroll = isBrowser ? require('scrollreveal') : undefined
 
 // For development
 // import ScrollReveal from 'scrollreveal' 
