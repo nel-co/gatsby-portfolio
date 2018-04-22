@@ -1,9 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+// For build
 const isBrowser = typeof window !== 'undefined'
-const MyScroll = isBrowser? require('scrollreveal') : undefined
-// import ScrollReveal from 'scrollreveal'
+const MyScroll = isBrowser ? import ('scrollreveal') : undefined
+
+// For development
+// import ScrollReveal from 'scrollreveal' 
 
 import './Portfolio.css'
 
@@ -15,6 +18,7 @@ import Wash from '../../content/img/p-wash.png'
 import Projects from '../../content/img/p-projects.png'
 
 export default class PortfolioItems extends React.PureComponent {
+  // For build  
   componentDidMount = () => {
     window.sr = MyScroll();
     const portfolioItems = document.querySelectorAll('.portfolio-box');
@@ -22,6 +26,15 @@ export default class PortfolioItems extends React.PureComponent {
       reset: 'true'
     });
   }
+
+  // For development  
+  // componentDidMount = () => {
+  //   window.sr = ScrollReveal();
+  //   const portfolioItems = document.querySelectorAll('.portfolio-box');
+  //   sr.reveal(portfolioItems, {
+  //     reset: 'true'
+  //   });
+  // }
   
   render() {
     return (

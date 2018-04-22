@@ -30,6 +30,9 @@
   font-size: 1.8em;
   padding-bottom: 10px;
   font-weight: 800;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 .portfolio-text p {
@@ -130,6 +133,9 @@ a.small-link:hover::before {
   padding: 0px;
   font-size: 1.8em;
   font-weight: 800;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 .portfolio-post h3 {
