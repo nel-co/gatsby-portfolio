@@ -45,7 +45,7 @@ export default class PortfolioItems extends React.PureComponent {
             <h2>Discflix</h2>
             <p>Discflix.com is a web app to watch the newest disc golf videos.</p>
             <div className="portfolio-btn-wrapper">
-              <a href="https://www.discflix.com/" target="_blank" className="small-link">VIEW PROJECT</a>
+              <a href="https://www.discflix.com/" target="_blank" rel="noreferrer" className="small-link">VIEW PROJECT</a>
               <Link to="/work/discflix" className="small-link">MORE INFO</Link>
             </div>
           </div>
@@ -62,7 +62,7 @@ export default class PortfolioItems extends React.PureComponent {
             <h2>Ikes Korner Grill</h2>
             <p>Custom built WordPress theme for a local restaraunt.</p>
             <div className="portfolio-btn-wrapper">
-              <a href="http://ikes.x10host.com/" target="_blank" className="small-link">VIEW PROJECT</a>
+              <a href="http://ikes.x10host.com/" target="_blank" rel="noreferrer" className="small-link">VIEW PROJECT</a>
               <Link to="/work/ikes" className="small-link">MORE INFO</Link>
             </div>
           </div>
@@ -73,7 +73,7 @@ export default class PortfolioItems extends React.PureComponent {
             <h2>DG Score Board</h2>
             <p>A disc golf score keeping web app.</p>
             <div className="portfolio-btn-wrapper">
-              <a href="https://www.discgolfscoreboard.com/" target="_blank" className="small-link">VIEW PROJECT</a>
+              <a href="https://www.discgolfscoreboard.com/" target="_blank" rel="noreferrer" className="small-link">VIEW PROJECT</a>
               <Link to="/work/scoreboard" className="small-link">MORE INFO</Link>
             </div>
           </div>
@@ -90,7 +90,7 @@ export default class PortfolioItems extends React.PureComponent {
             <h2>iheartdogs.com</h2>
             <p>Translated design mockups into front-end code.</p>
             <div className="portfolio-btn-wrapper">
-              <a href="https://iheartdogs.com/coffee/" target="_blank" className="small-link">VIEW PROJECT</a>
+              <a href="https://iheartdogs.com/coffee/" target="_blank" rel="noreferrer" className="small-link">VIEW PROJECT</a>
               <Link to="/work/heart-dogs" className="small-link">MORE INFO</Link>
             </div>
           </div>
@@ -101,7 +101,7 @@ export default class PortfolioItems extends React.PureComponent {
             <h2>LXR Wash</h2>
             <p>Design and code multiple components throughout the site.</p>
             <div className="portfolio-btn-wrapper">
-              <a href="https://lxrwash.com" target="_blank" className="small-link">VIEW PROJECT</a>
+              <a href="https://lxrwash.com" target="_blank" rel="noreferrer" className="small-link">VIEW PROJECT</a>
               <Link to="/work/lxr" className="small-link">MORE INFO</Link>
             </div>
           </div>
