@@ -45,5 +45,3 @@ export const query = graphql`
     }
   }
 `;
-
-// BLOG: my top vs code extensions

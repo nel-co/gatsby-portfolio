@@ -6,7 +6,7 @@ title: "Discflix"
 ![cover](https://res.cloudinary.com/dkutta9yu/image/upload/v1523191274/heyimnelson/discflix-project-1.png)
 ### The Overview
 
-[Discflix.com](Discflix.com) is a web app I designed/developed. My goal was to create a site that enabled users to watch and view all    of the new disc golf tournament videos that are uploaded to YouTube. With Discflix, I knew I wanted most of the standard features of a video app (e.g., Netflix), like adding videos to favorites,    adding to a watchlist, and keeping track of what you already watched so I set off on researching existing video apps.
+[Discflix.com](https://Discflix.com) is a web app I designed/developed. My goal was to create a site that enabled users to watch and view all    of the new disc golf tournament videos that are uploaded to YouTube. With Discflix, I knew I wanted most of the standard features of a video app (e.g., Netflix), like adding videos to favorites,    adding to a watchlist, and keeping track of what you already watched so I set off on researching existing video apps.
 
 ### The Process
 ![mood board](https://res.cloudinary.com/dkutta9yu/image/upload/v1523191274/heyimnelson/discflix-project-2.jpg)
