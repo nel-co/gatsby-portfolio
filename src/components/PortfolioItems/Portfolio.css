@@ -181,7 +181,7 @@ a.small-link:hover::before {
 
 .portfolio-page-wrapper p {
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 1em;
+  font-size: 1.10em;
   line-height: 1.8;
   color: #747474;
   padding: 15px 0px;  

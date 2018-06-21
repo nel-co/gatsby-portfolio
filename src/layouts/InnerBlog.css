@@ -6,7 +6,7 @@
 }
 
 .blog-title__inner {
-  font-size: 1.8em;
+  font-size: 2em;
   padding-bottom: 10px;
   font-weight: 800;
 }
@@ -30,7 +30,7 @@
 .blog-post {
   padding: 10px 0px 40px;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 1em;
+  font-size: 1.10em;
   line-height: 1.8;
   color: #747474;
 }
@@ -61,4 +61,12 @@
   width: 100%;
   height: auto;
   padding: 15px 0px 5px;
+}
+
+.blog-post p {
+  margin-bottom: 15px;
+}
+
+.blog-post ul {
+  list-style: disc;
 }
