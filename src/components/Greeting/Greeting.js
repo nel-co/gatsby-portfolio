@@ -21,7 +21,7 @@ export default class Greeting extends Component {
   render() {
     this.getTimeOfDay();
     return (
-      <p>{this.getTimeOfDay()} and Happy {this.getDay()}! Here’s some stuff I’ve done recently.</p>
+      <p>{this.getTimeOfDay()} and Happy {this.getDay()}! 👋 Here’s some stuff I’ve done recently.</p>
     )
   }
 }

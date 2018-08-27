@@ -10,8 +10,8 @@ export default class IndexPage extends React.PureComponent {
     return (
       <div className="main-container">
         <div className="hero-section">
-          <h1>Hey I'm <Link to="#blog">Nelson</Link></h1>
-          <p>A <Link to="#portfolio" className="mid-link">front-end developer</Link> in South Carolina!</p>
+          <h1>Hey I'm Nelson.</h1>
+          <p>Code-Lover 💗, Pixel-Pusher 👾, Trouble-Shooter 🔫</p>
         </div>
 
         <div className="greeting">

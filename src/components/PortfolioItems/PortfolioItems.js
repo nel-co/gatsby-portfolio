@@ -5,9 +5,6 @@ import Link from 'gatsby-link'
 const isBrowser = typeof window !== 'undefined'
 const MyScroll = isBrowser ? require('scrollreveal') : undefined
 
-// For development
-// import ScrollReveal from 'scrollreveal' 
-
 import './Portfolio.css'
 
 import Discflix from '../../content/img/p-discflix.png'
@@ -26,15 +23,6 @@ export default class PortfolioItems extends React.PureComponent {
       reset: 'true'
     });
   }
-
-  // For development  
-  // componentDidMount = () => {
-  //   window.sr = ScrollReveal();
-  //   const portfolioItems = document.querySelectorAll('.portfolio-box');
-  //   sr.reveal(portfolioItems, {
-  //     reset: 'true'
-  //   });
-  // }
   
   render() {
     return (
