@@ -89,7 +89,7 @@ export default class PortfolioItems extends React.PureComponent {
             <h2>LXR Wash</h2>
             <p>Design and code multiple components throughout the site.</p>
             <div className="portfolio-btn-wrapper">
-              <a href="https://lxrwash.com/landing-page-32oz-offer/" target="_blank" rel="noreferrer" className="small-link">VIEW PROJECT</a>
+              <a href="https://lxrwash.com" target="_blank" rel="noreferrer" className="small-link">VIEW PROJECT</a>
               <Link to="/work/lxr" className="small-link">MORE INFO</Link>
             </div>
           </div>
