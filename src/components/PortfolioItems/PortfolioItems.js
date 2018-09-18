@@ -8,6 +8,7 @@ const MyScroll = isBrowser ? require('scrollreveal') : undefined
 import './Portfolio.css'
 
 import Discflix from '../../content/img/p-discflix.png'
+import Mineworthy from '../../content/img/p-mineworthy.png'
 import Ikes from '../../content/img/p-ikes.png'
 import ScoreBoard from '../../content/img/p-scoreboard.png'
 import Dogs from '../../content/img/p-dogs.png'
@@ -44,8 +45,19 @@ export default class PortfolioItems extends React.PureComponent {
 
         <div className="portfolio-box">
           <div className="portfolio-image">
-            <img src={Ikes} alt="Ikes" />
+            <img src={Mineworthy} alt="Mineworthy" />
           </div>
+          <div className="portfolio-text">
+            <h2>Mineworthy</h2>
+            <p>Full stack web app built with Mongo, Express, EJS, & Node.</p>
+            <div className="portfolio-btn-wrapper">
+              <a href="https://enigmatic-peak-56673.herokuapp.com/" target="_blank" rel="noreferrer" className="small-link">VIEW PROJECT</a>
+              <Link to="/work/mineworthy" className="small-link">MORE INFO</Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="portfolio-box">
           <div className="portfolio-text">
             <h2>Ikes Korner Grill</h2>
             <p>Custom built WordPress theme for a local restaraunt.</p>
@@ -54,9 +66,15 @@ export default class PortfolioItems extends React.PureComponent {
               <Link to="/work/ikes" className="small-link">MORE INFO</Link>
             </div>
           </div>
+          <div className="portfolio-image">
+            <img src={Ikes} alt="Ikes" />
+          </div>
         </div>
 
         <div className="portfolio-box">
+        <div className="portfolio-image">
+            <img src={ScoreBoard} alt="discgolfscoreboard.com" />
+          </div>
           <div className="portfolio-text">
             <h2>DG Score Board</h2>
             <p>A disc golf score keeping web app.</p>
@@ -65,15 +83,9 @@ export default class PortfolioItems extends React.PureComponent {
               <Link to="/work/scoreboard" className="small-link">MORE INFO</Link>
             </div>
           </div>
-          <div className="portfolio-image">
-            <img src={ScoreBoard} alt="discgolfscoreboard.com" />
-          </div>
         </div>
 
         <div className="portfolio-box">
-          <div className="portfolio-image">
-              <img src={Dogs} alt="discgolfscoreboard.com" />
-          </div>
           <div className="portfolio-text">
             <h2>iheartdogs.com</h2>
             <p>Translated design mockups into front-end code.</p>
@@ -82,9 +94,15 @@ export default class PortfolioItems extends React.PureComponent {
               <Link to="/work/heart-dogs" className="small-link">MORE INFO</Link>
             </div>
           </div>
+          <div className="portfolio-image">
+            <img src={Dogs} alt="discgolfscoreboard.com" />
+          </div>
         </div>
 
         <div className="portfolio-box">
+        <div className="portfolio-image">
+            <img src={Wash} alt="lxr components" />
+          </div>
           <div className="portfolio-text">
             <h2>LXR Wash</h2>
             <p>Design and code multiple components throughout the site.</p>
@@ -93,21 +111,18 @@ export default class PortfolioItems extends React.PureComponent {
               <Link to="/work/lxr" className="small-link">MORE INFO</Link>
             </div>
           </div>
-          <div className="portfolio-image">
-            <img src={Wash} alt="lxr components" />
-          </div>
         </div>
 
         <div className="portfolio-box">
-          <div className="portfolio-image">
-            <img src={Projects} alt="side projects image" />
-          </div>
           <div className="portfolio-text">
             <h2>Side Projects</h2>
             <p>A collection of my projects that I’ve built.</p>
             <div className="portfolio-btn-wrapper">
               <Link to="/projects" className="small-link small-link__single">VIEW PROJECTS</Link>
             </div>
+          </div>
+          <div className="portfolio-image">
+            <img src={Projects} alt="side projects image" />
           </div>
         </div>
 
