@@ -4,8 +4,30 @@ import Link from 'gatsby-link'
 import PortfolioItems from '../components/PortfolioItems/PortfolioItems'
 import HomeBlog from '../components/HomeBlog/HomeBlog'
 import Greeting from '../components/Greeting/Greeting'
+import Commits from '../components/Commits/Commits'
 
 export default class IndexPage extends React.PureComponent {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      commits: []
+    }
+  }
+
+  componentDidMount = () => {
+    fetch('https://api.github.com/users/nel-co/events')
+      .then(response => {
+        return response.json();
+      })
+      .then(data => {
+        this.setState({
+          commits: data.filter(d => d.type === 'PushEvent')
+        })
+      });
+  }
+  
+
   render() {
     return (
       <div className="main-container">
@@ -19,6 +41,8 @@ export default class IndexPage extends React.PureComponent {
         </div>
         <PortfolioItems />
         <HomeBlog data={this.props.data}/>
+        {this.state.commits !== [] ? <Commits commits={this.state.commits} /> : null}
+        
       </div>
     )
   }

@@ -1,0 +1,78 @@
+#recent-commits {
+  background: black;
+  padding: 60px 0px;
+  color: white;
+}
+
+.commit-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+}
+
+.commit-wrapper h3 {
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  padding-right: 45px;
+}
+
+.commits {
+  width: 100%;
+  display: flex;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: .75em;
+}
+
+.commit {
+  width: 33%;
+  padding-right: 30px;
+}
+
+.commit-top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted #ffffff59;
+  padding-bottom: 4px;
+}
+
+.commit-top a {
+  color: #5bcb70;
+}
+
+.commit-top span {
+  opacity: .6;
+}
+
+.commit-bottom {
+  padding-top: 4px;
+  opacity: .6;
+}
+
+@media screen and (max-width: 790px) {
+  .commit-wrapper h3 {
+    padding-right: 0px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .commit-wrapper {
+    flex-direction: column;
+  }
+  .commit-wrapper h3 {
+    padding-right: 0px;
+    padding-bottom: 30px;
+  }
+  .commits {
+    flex-direction: column;
+  }
+  .commit {
+    width: 100%;
+    padding-right: 0px;
+    padding-bottom: 30px;
+  }
+  .commit:last-of-type {
+    padding-bottom: 0px;
+  }
+}

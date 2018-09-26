@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import moment from 'moment'
 
+import './Greeting.css';
+
 export default class Greeting extends Component {
 
   getDay = () => {
@@ -21,7 +23,7 @@ export default class Greeting extends Component {
   render() {
     this.getTimeOfDay();
     return (
-      <p>{this.getTimeOfDay()} and Happy {this.getDay()}! 👋 Here’s some stuff I’ve done recently.</p>
+      <p>{this.getTimeOfDay()} and Happy {this.getDay()}! <span className="greeting-wave">👋</span> Here’s some stuff I’ve done recently.</p>
     )
   }
 }

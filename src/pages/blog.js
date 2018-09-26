@@ -3,7 +3,6 @@ import Link from 'gatsby-link'
 import NavBar from '../components/NavBar'
 
 export default ({data}) => {
-  
   const blogPosts = data.allMarkdownRemark.edges.filter( ({node}) => {
     return node.frontmatter.date !== null
   })
