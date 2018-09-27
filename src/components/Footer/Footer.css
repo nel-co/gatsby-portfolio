@@ -1,7 +1,12 @@
 .footer {
   background: #5bcb70;
+  background: url(../../content/img/footer-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   /* padding: 30px 30px 0px; */
   height: 80vh;
+  /* min-height: 80vh; */
   font-family: 'Montserrat', sans-serif;
   color: white;
   word-break: break-word;
@@ -12,6 +17,7 @@
   margin: 0 auto;
   max-width: 1100px;  
   min-height: 80vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -26,21 +32,30 @@
 
 .footer-email span {
   font-weight: 800;
-  color: black;
+  color: white;
   padding-bottom: 20px;
   font-size: 2.5em;
+  line-height: 1.1;
 }
 
 .footer-email a {
   font-weight: 800;
-  opacity: .6;
+  color: #7fff8a;
   font-size: 1.5em;
   text-decoration: underline;
+}
+
+.footer-email a::before {
+  display: none;
 }
 
 .footer-email a:hover {
   opacity: 1;
   transition: all .4s ease;
+}
+
+.footer-email em {
+  color: #7fff8a;
 }
 
 .footer-social {
@@ -56,10 +71,10 @@
   display: flex;
   justify-content: space-between;
   font-size: 10px;
-  color: black;
-  opacity: .4;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 30px 0px;
+  color: white;
+  opacity: .7;
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 30px 0px 42px;
 }
 
 @media screen and (max-width: 482px) {
@@ -79,9 +94,9 @@
 }
 
 @media screen and (max-width: 320px) {
-  .footer {
-    /* padding-bottom: 92px; */
-  }
+  /* .footer {
+    padding-bottom: 92px;
+  } */
   .footer-email {
     padding: 30px 0px;
   }

@@ -5,7 +5,7 @@ const Footer = () => (
   <footer className="footer">
     <div className="footer-wrapper">
       <div className="footer-email">
-        <span>Have an interesting project? Or just want to get in touch? I’d love to hear from you.</span>
+        <span>Have an interesting project? Or just want to <em>get in touch</em>? I’d love to hear from you.</span>
         <a href="mailto:heyimnelson@gmail.com">heyimnelson@gmail.com</a>
       </div>
       <div className="footer-bottom">
