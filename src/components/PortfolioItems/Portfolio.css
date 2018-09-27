@@ -22,6 +22,10 @@
   width: 40%;
 }
 
+.portfolio-image {
+  min-width: 175px;
+}
+
 .portfolio-box:nth-of-type(even) .portfolio-text {
   width: 50%;  
 }
@@ -229,5 +233,12 @@ a.small-link:hover::before {
   .portfolio-project-row {
     grid-template-columns: 1fr;
     grid-gap: 5px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+  .portfolio-image {
+    flex-shrink: 0;
+    width: 40%;
   }
 }

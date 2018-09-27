@@ -79,3 +79,15 @@ a.small-link {
     padding-top: 20px;    
   }
 }
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+  .blog-wrapper__home {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .blog-block__home {
+    width: 50%;
+    padding: 15px;
+  }
+}

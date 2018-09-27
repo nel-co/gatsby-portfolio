@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:500,600|Montserrat:700,800');
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   /* font-size: 62.5%; */
   font-family: 'Montserrat', sans-serif;
@@ -63,7 +68,7 @@ a.mid-link:hover::before,
   margin: 0 auto;
 }
 
-.hero-section h1{
+.hero-section h1 {
   font-size: 3.8em;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 15px;
@@ -91,4 +96,20 @@ a.mid-link:hover::before,
 .greeting, .hero-section p {
   font-weight: 600;
   line-height: 1.4;
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+  .hero-section {
+    height: 500px;
+  }
+
+  .hero-section h1,
+  .hero-section p {
+    width: 100%;
+  }
+
+  #recent-commits {
+    display: none;
+    visibility: hidden;
+  }
 }
