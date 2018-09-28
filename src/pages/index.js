@@ -25,8 +25,20 @@ export default class IndexPage extends React.PureComponent {
           commits: data.filter(d => d.type === 'PushEvent')
         })
       });
+      if(window.innerWidth > 482) {
+        this.footerAnimate();
+      }
   }
   
+  footerAnimate = () => {
+    const bg = document.querySelector('footer');
+    bg.addEventListener('mousemove', e => {
+      const amountMovedX = (e.pageX * -1 / 96);
+      const amountMovedY = (e.pageY * -1 / 324);
+      bg.style.backgroundPosition = `${amountMovedX}px ${amountMovedY}px`;
+      });
+    
+  }
 
   render() {
     return (

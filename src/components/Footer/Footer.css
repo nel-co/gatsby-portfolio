@@ -1,7 +1,7 @@
 .footer {
-  background: #5bcb70;
+  /* background: #5bcb70; */
   background: url(../../content/img/footer-bg.jpg);
-  background-position: center;
+  background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
   /* padding: 30px 30px 0px; */
@@ -10,6 +10,19 @@
   font-family: 'Montserrat', sans-serif;
   color: white;
   word-break: break-word;
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url(../../content/img/footer-bg.jpg);
+  background-position: left;
+  background-size: inherit;
+  background-repeat: no-repeat;
 }
 
 .footer-wrapper {
@@ -78,6 +91,12 @@
 }
 
 @media screen and (max-width: 482px) {
+  .footer {
+    background-position: center;
+  }
+  .footer::before {
+    background-position: center;
+  }
   .footer-bottom {
     flex-direction: column-reverse;
     text-align: center;
