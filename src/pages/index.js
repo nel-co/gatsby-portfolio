@@ -31,10 +31,11 @@ export default class IndexPage extends React.PureComponent {
   }
   
   footerAnimate = () => {
-    const bg = document.querySelector('footer');
-    bg.addEventListener('mousemove', e => {
+    const footer = document.querySelector('footer');
+    const bg = document.querySelector('.footer-bg');
+    footer.addEventListener('mousemove', e => {
       const amountMovedX = (e.pageX * -1 / 96);
-      const amountMovedY = (e.pageY * -1 / 324);
+      const amountMovedY = (e.pageY * -1 / 96);
       bg.style.backgroundPosition = `${amountMovedX}px ${amountMovedY}px`;
       });
     
