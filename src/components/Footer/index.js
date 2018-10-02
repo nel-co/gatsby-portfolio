@@ -3,6 +3,7 @@ import './Footer.css'
 
 const Footer = () => (
   <footer className="footer">
+    <div className="footer-bg"></div>
     <div className="footer-wrapper">
       <div className="footer-email">
         <span>Have an interesting project? Or just want to <em>get in touch</em>? I’d love to hear from you.</span>

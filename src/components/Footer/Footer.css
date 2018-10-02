@@ -1,6 +1,6 @@
 .footer {
   /* background: #5bcb70; */
-  background: url(../../content/img/footer-bg.jpg);
+  /* background: url(../../content/img/footer-bg.jpg); */
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,9 +11,21 @@
   color: white;
   word-break: break-word;
   position: relative;
+  overflow: hidden;
 }
 
-.footer::before {
+.footer-bg {
+  background: url(../../content/img/footer-bg.jpg);
+  width: 107.1%;
+  height: 107.1%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: left;
+  z-index: -1;
+  position: absolute;
+}
+
+/* .footer::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -23,7 +35,8 @@
   background-position: left;
   background-size: inherit;
   background-repeat: no-repeat;
-}
+  z-index: -5;
+} */
 
 .footer-wrapper {
   width: 80%;
