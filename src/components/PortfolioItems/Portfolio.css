@@ -16,6 +16,11 @@
   margin-bottom: 30px;
   color: #1f1f1f;
   font-family: 'Montserrat', sans-serif;
+  border-radius: 59% 41% 79% 21% / 18% 54% 46% 82%;
+}
+
+.portfolio-box:nth-of-type(even) {
+  border-radius: 41% 59% 21% 79% / 54% 18% 82% 46%;
 }
 
 .portfolio-text {
