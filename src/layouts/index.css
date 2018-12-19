@@ -73,6 +73,58 @@ a.mid-link:hover::before,
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 15px;
   color: #1f1f1f;
+  position: relative;
+}
+
+.hero-section h1::before,
+.hero-section h1::after {
+  display: block;
+  content: "Hey I'm Nelson.";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .5;
+}
+
+.hero-section h1::before {
+  color: #ca5b88;
+  z-index: -1;
+}
+
+.hero-section h1::after {
+  color: #5bc9ca;
+  z-index: -2;
+}
+
+.hero-section h1:hover::before {
+  animation: GLITCH .6s cubic-bezier(.25, .46, .45, .94) both infinite;
+}
+
+.hero-section h1:hover::after {
+  animation: GLITCH .4s cubic-bezier(.25, .46, .45, .94) reverse both infinite;
+}
+
+@keyframes GLITCH {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-5px, 5px);
+  }
+  40% {
+    transform: translate(-5px, -5px);
+  }
+  60% {
+    transform: translate(5px, 5px);
+  }
+  80% {
+    transform: translate(5px, -5px);
+  }
+  to {
+    transform: translate(0);
+  }
 }
 
 .hero-section h1 a {
