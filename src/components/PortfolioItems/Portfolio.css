@@ -67,6 +67,12 @@
   }
 }
 
+@media screen and (max-width:475px) {
+  .portfolio-box h2 {
+    font-size: 1.3em;
+  }
+}
+
 a.small-link, {
   z-index: 2;  
   font-size: 11px;  
