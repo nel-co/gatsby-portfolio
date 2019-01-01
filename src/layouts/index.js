@@ -24,7 +24,7 @@ const TemplateWrapper = ({ children }) => (
     <div className="main-wrapper">
       {children()}
     </div>
-    { window.location.pathname !== '/resume' ? <Footer /> : null }         
+    { typeof window !== 'undefined' && window.location.pathname !== '/resume' ? <Footer /> : null }         
   </div>
 )
 
