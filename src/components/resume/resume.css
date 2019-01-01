@@ -1,0 +1,154 @@
+.resume-wrapper {
+  min-height: 100vh;
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.resume-wrapper .resume-column {
+  border-right: 1px solid #e0e0e0;
+}
+
+.resume-wrapper .resume-column:nth-of-type(1) {
+  padding: 20px 20px 20px 0px;
+}
+
+.resume-wrapper .resume-column:nth-of-type(2),
+.resume-wrapper .resume-column:nth-of-type(3) {
+  padding: 20px;
+}
+
+.resume-wrapper .resume-column:nth-of-type(4) {
+  padding: 20px 0px 20px 20px;
+}
+
+.resume-wrapper .resume-column:last-of-type {
+  border: none;
+}
+
+.resume-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 25% 50% 10% 25%; 
+}
+
+.resume-wrapper h2 {
+  font-size: 22px;
+  padding: 20px 0px;
+}
+
+.resume-wrapper h3 {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.resume-wrapper p,
+.resume-column ul {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  line-height: 23px;
+  color: #686868;
+}
+
+.exp-title {
+  font-family: 'IBM Plex Mono', monospace;
+  color: #5bcb70;
+  font-size: 14px;
+  line-height: 1.5;
+  padding-bottom: 10px;
+}
+
+.exp-block ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.exp-block li {
+  padding-bottom: 10px;
+}
+
+.resume-row:not(:nth-of-type(1)) {
+  padding-top: 60px;
+}
+
+.resume-bio p {
+  padding-bottom: 20px;
+}
+
+.point-wrapper {
+  margin: -3px;
+  padding-top: 10px;
+}
+
+.point-wrapper a,
+.point-wrapper span {
+  display: inline-block;
+  border: 1px solid #5bcb70;
+  color: #5bcb70;
+  padding: 12px;
+  margin: 3px;
+  border-radius: 6px;
+  font-size: 13px;
+  transition: all .2s ease-in-out;
+}
+
+.point-wrapper a:hover,
+.point-wrapper span:hover {
+  background: rgba(91, 203, 112, 0.11);
+}
+
+.point-wrapper a::before {
+  display: none;
+  visibility: hidden;
+}
+
+a.resume-email {
+  color: #686868;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+a.resume-email::before {
+  display: none;
+  visibility: hidden;
+}
+
+.resume-projects h3 {
+  font-size: 11px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+  .resume-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .resume-wrapper .resume-column:nth-of-type(2),
+  .resume-wrapper .resume-column:nth-of-type(4) {
+    padding-right: 0;
+    border: none;
+  }
+  .resume-wrapper .resume-column:nth-of-type(3),
+  .resume-wrapper .resume-column:nth-of-type(4) {
+    border-top: 1px solid #e0e0e0;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .resume-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .resume-wrapper .resume-column:nth-of-type(1),
+  .resume-wrapper .resume-column:nth-of-type(3) {
+    border-right: none;
+    padding-right: 0;
+  }
+  .resume-wrapper .resume-column:nth-of-type(2),
+  .resume-wrapper .resume-column:nth-of-type(3),
+  .resume-wrapper .resume-column:nth-of-type(4) {
+    padding-left: 0;
+  }
+  .resume-wrapper .resume-column:nth-of-type(2) {
+    border-top: 1px solid #e0e0e0;
+  }
+}

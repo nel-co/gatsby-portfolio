@@ -10,7 +10,7 @@ const Footer = () => (
         <a href="mailto:heyimnelson@gmail.com">heyimnelson@gmail.com</a>
       </div>
       <div className="footer-bottom">
-        <span>© 2018 HeyImNelson.com</span>
+        <span>© {new Date().getFullYear()} HeyImNelson.com</span>
         <span></span>
         <span>Made in South Carolina</span>
       </div>

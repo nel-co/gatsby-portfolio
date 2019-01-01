@@ -78,7 +78,7 @@ a.mid-link:hover::before,
 
 .hero-section h1::before,
 .hero-section h1::after {
-  display: block;
+  display: none;
   content: "Hey I'm Nelson.";
   position: absolute;
   top: 0;
@@ -99,10 +99,12 @@ a.mid-link:hover::before,
 }
 
 .hero-section h1:hover::before {
+  display: block;
   animation: GLITCH .6s cubic-bezier(.25, .46, .45, .94) both infinite;
 }
 
 .hero-section h1:hover::after {
+  display: block;
   animation: GLITCH .4s cubic-bezier(.25, .46, .45, .94) reverse both infinite;
 }
 
@@ -148,6 +150,11 @@ a.mid-link:hover::before,
 .greeting, .hero-section p {
   font-weight: 600;
   line-height: 1.4;
+}
+
+.hero-section a::before {
+  display: none;
+  visibility: hidden;
 }
 
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
