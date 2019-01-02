@@ -100,12 +100,12 @@ a.mid-link:hover::before,
 
 .hero-section h1:hover::before {
   display: block;
-  animation: GLITCH .6s cubic-bezier(.25, .46, .45, .94) both infinite;
+  animation: GLITCH .7s cubic-bezier(.25, .46, .45, .94) both infinite;
 }
 
 .hero-section h1:hover::after {
   display: block;
-  animation: GLITCH .4s cubic-bezier(.25, .46, .45, .94) reverse both infinite;
+  animation: GLITCH .5s cubic-bezier(.25, .46, .45, .94) reverse both infinite;
 }
 
 @keyframes GLITCH {
@@ -131,6 +131,71 @@ a.mid-link:hover::before,
 
 .hero-section h1 a {
   color: #1f1f1f;
+}
+
+.hero-section h1 {
+  position: relative;
+}
+
+.hero-section h1 span {
+  font-size: 12px;
+  background: #5bcb70;
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  top: -30px;
+  border-radius: 3px;
+  display: none;
+  visibility: hidden;
+}
+
+.hero-section h1 span.active {
+  display: inline-block;
+  visibility: visible;
+  transition: all .3s ease;
+  animation: toolTip .2s cubic-bezier(.25, .46, .45, .94) forwards;
+}
+
+@keyframes toolTip {
+  0% {
+    font-size: 4px;
+    opacity: 0;
+    height: 0;
+  }
+  75% {
+    font-size: 14px;
+  }
+  100% {
+    font-size: 12px;
+    opacity: 1;
+    height: auto;
+  }
+}
+
+.hero-section h1 span::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  background: #5bcb70;
+  position: absolute;
+  z-index: -1;
+  top: 68%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 649px) {
+  .hero-section h1 span {
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: -35px;
+    width: 50%;
+  }
 }
 
 .hero-section p {

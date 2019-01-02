@@ -28,6 +28,9 @@ export default class IndexPage extends React.PureComponent {
       if(window.innerWidth > 482) {
         this.footerAnimate();
       }
+      setTimeout(() => {
+        this.handleToolTip();        
+      }, 2000);
   }
   
   footerAnimate = () => {
@@ -38,14 +41,21 @@ export default class IndexPage extends React.PureComponent {
       const amountMovedY = (e.pageY * -1 / 96);
       bg.style.backgroundPosition = `${amountMovedX}px ${amountMovedY}px`;
       });
-    
+  }
+
+  handleToolTip = () => {
+    const toolTip = document.querySelector('.hero-section h1 span');
+    toolTip.classList.add('active');
   }
 
   render() {
     return (
       <div className="main-container">
         <div className="hero-section">
-          <h1><Link to="/resume">Hey, I'm Nelson.</Link></h1>
+          <h1>
+            <span>My Resume!</span>
+            <Link to="/resume">Hey, I'm Nelson.</Link>
+          </h1>
           <p>Code-Lover 💗, Pixel-Pusher 👾, Trouble-Shooter 🔫</p>
         </div>
 

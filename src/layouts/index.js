@@ -7,6 +7,8 @@ import Footer from '../components/Footer'
 import './index.css'
 import 'prismjs/themes/prism.css'
 
+const isBrowser = typeof window !== 'undefined'
+
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
@@ -24,7 +26,7 @@ const TemplateWrapper = ({ children }) => (
     <div className="main-wrapper">
       {children()}
     </div>
-    { typeof window !== 'undefined' && window.location.pathname !== '/resume' ? <Footer /> : null }         
+    { isBrowser && (window.location.pathname === '/resume' || window.location.pathname === '/resume/') ? null : <Footer /> }         
   </div>
 )
 
