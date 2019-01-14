@@ -30,6 +30,7 @@ export default class ResumeWrapper extends Component {
               <li>Collaborated in creative briefs with both large and small teams to advise and plan projects</li>
               <li>Translated wireframes and mockups into responsive, interactive features, using HTML/SASS and JavaScript</li>
               <li>Maintained client websites on an ongoing basis</li>
+              <li>Created landing pages and interactive product pages with Vue.js to support eccommerce sites</li>
             </ul>
           </div>
 
@@ -38,7 +39,7 @@ export default class ResumeWrapper extends Component {
             <ul>
               <li>Used HTML5, CSS, React.js, JavaScript, Git, Webpack, and REST APIs to develop complex and responsive web applications</li>
               <li>Wrote templates and front-end code for Django-based app</li>
-              <li>Maintained client websites on an ongoing basis</li>
+              <li>Built high fidelity mockups using Figma and convert to front end code</li>
             </ul>
           </div>
 
@@ -97,6 +98,7 @@ export default class ResumeWrapper extends Component {
               <span>SASS</span>
               <span>JavaScript</span>
               <span>React.js</span>
+              <span>Vue.js</span>
               <span>Gatsby.js</span>
               <span>WordPress</span>
               <span>Responsive Design</span>
