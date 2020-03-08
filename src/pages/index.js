@@ -23,7 +23,7 @@ export default class IndexPage extends React.PureComponent {
       .then(data => {
         this.setState({
           commits: data.filter(d => d.type === 'PushEvent')
-        })
+        }, () => console.log(data))
       });
       if(window.innerWidth > 482) {
         this.footerAnimate();
@@ -64,7 +64,7 @@ export default class IndexPage extends React.PureComponent {
         </div>
         <PortfolioItems />
         <HomeBlog data={this.props.data}/>
-        {this.state.commits !== [] ? <Commits commits={this.state.commits} /> : null}
+        {/* {this.state.commits !== [] ? <Commits commits={this.state.commits} /> : null} */}
         
       </div>
     )

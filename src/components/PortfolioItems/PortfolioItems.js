@@ -62,7 +62,7 @@ export default class PortfolioItems extends React.PureComponent {
             <h2>Ikes Korner Grill</h2>
             <p>Custom built WordPress theme for a local restaraunt.</p>
             <div className="portfolio-btn-wrapper">
-              <a href="http://ikes.x10host.com/" target="_blank" rel="noreferrer" className="small-link">VIEW PROJECT</a>
+              {/* <a href="http://ikes.x10host.com/" target="_blank" rel="noreferrer" className="small-link">VIEW PROJECT</a> */}
               <Link to="/work/ikes" className="small-link">MORE INFO</Link>
             </div>
           </div>
@@ -85,7 +85,7 @@ export default class PortfolioItems extends React.PureComponent {
           </div>
         </div>
 
-        <div className="portfolio-box">
+        {/* <div className="portfolio-box">
           <div className="portfolio-text">
             <h2>iheartdogs.com</h2>
             <p>Translated design mockups into front-end code.</p>
@@ -97,7 +97,7 @@ export default class PortfolioItems extends React.PureComponent {
           <div className="portfolio-image">
             <img src={Dogs} alt="discgolfscoreboard.com" />
           </div>
-        </div>
+        </div> */}
 
         <div className="portfolio-box">
         <div className="portfolio-image">

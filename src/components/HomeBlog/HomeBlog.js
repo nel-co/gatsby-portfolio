@@ -9,14 +9,12 @@ const HomeBlog = ({data}) => {
   });
   return (
     <div className="blog-container" id="blog">
+      <h2>Recent Posts</h2>
       <div className="blog-wrapper__home" id="home-blog">
         {blogPosts.slice(blogPosts.length - 4).reverse().map(({ node }) => {
           return (
             <div className="blog-block__home" key={node.id}>
-              <div className="blog-block-top-row">
-                <span>{node.frontmatter.date}</span>
-              </div>
-              <h2 className="blog-title__home"><Link to={node.fields.slug}>{node.frontmatter.title}</Link></h2>
+              <h3 className="blog-title__home"><Link to={node.fields.slug}>{node.frontmatter.title}</Link></h3>
               <p className="blog-excerpt">{node.excerpt}</p>
               <Link to={node.fields.slug} className="small-link">READ</Link>
             </div>

@@ -10,9 +10,6 @@ const InnerBlog = ({data}) => {
     <NavBarPost />
     <div className="blog-wrapper__inner">
       <h1 className="blog-title__inner">{post.frontmatter.title}</h1>
-      <div className="blog-post-info">
-        <span>{post.frontmatter.date}</span>
-      </div>
       <div className="blog-post" dangerouslySetInnerHTML={{ __html: post.html }} />
     </div>
     </div>

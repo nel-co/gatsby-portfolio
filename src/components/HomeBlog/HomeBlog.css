@@ -14,6 +14,16 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.blog-container h2 {
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 0 30px 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8em;
+  font-weight: 800;
+}
+
 .blog-block-top-row {
   font-size: .65em;
   font-weight: 800;
