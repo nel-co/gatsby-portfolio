@@ -1,0 +1,75 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $mainfont;
+  font-weight: 700;
+  margin: 0 0 15px;
+}
+
+h1 {
+  font-size: 90px;
+  color: $primary;
+  line-height: 1;
+
+  @media screen and (max-width: $smalldevice) {
+    font-size: 60px;    
+  }
+}
+
+h2 {
+  font-size: 48px;
+  color: $primary;
+  line-height: 1;
+
+  @media screen and (max-width: $smalldevice) {
+    font-size: 40px;    
+  }
+}
+
+h3 {
+  font-size: 36px;
+  color: $primary;
+  line-height: 1;
+
+  @media screen and (max-width: $smalldevice) {
+    font-size: 30px;    
+  }
+}
+
+h4 {
+  font-size: 16px;
+  color: $primary;
+  line-height: 1;
+
+  @media screen and (max-width: $smalldevice) {
+    font-size: 16px;    
+  }
+}
+
+h5 {
+  font-size: 16px;
+  color: $primary;
+  line-height: 1;
+
+  @media screen and (max-width: $smalldevice) {
+    font-size: 16px;    
+  }
+}
+
+p {
+  font-size: 18px;
+  font-weight: 500;
+  color: $primary;
+  line-height: 1.4;
+
+  @media screen and (max-width: $smalldevice) {
+    font-size: 16px;    
+  }
+}
+
+blockquote {
+
+}

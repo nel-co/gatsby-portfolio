@@ -1,0 +1,35 @@
+/*!
+	Theme Name: Chase & Bean
+	Author: Chase & Bean
+	Author URI: http://chaseandbean.com
+	Description: Theme for Chase & Bean sites
+	Version: 1.0
+	Text Domain: chasebean
+*/
+
+// Settings
+@import 'settings/variables';
+@import 'settings/mixins';
+@import 'settings/normalize';
+@import 'settings/base';
+
+// Elements
+@import 'elements/typography';
+@import 'elements/forms';
+@import 'elements/buttons';
+@import 'elements/fonts';
+@import 'elements/flexbox';
+
+// Components
+@import 'components/header';
+@import 'components/footer';
+@import 'components/mobile-bar';
+
+// Plugins
+
+// Views
+@import 'views/home';
+@import 'views/default';
+@import 'views/blog';
+@import 'views/single';
+@import 'views/404';

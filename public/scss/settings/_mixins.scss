@@ -1,0 +1,108 @@
+@mixin true-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin banner {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .6;
+    top: 0;
+    left: 0;
+  }
+}
+
+// Transition 
+$default-trans-property: all;
+$default-trans-type: ease;
+$default-trans-speed: .25s;
+$default-trans-delay: 0s;
+@mixin transition (
+  $trans-property: $default-trans-property,
+  $trans-type: $default-trans-type,
+  $trans-speed: $default-trans-speed,
+  $trans-delay: $default-trans-delay
+) {
+  transition-property: $trans-property;
+  transition-timing-function: $trans-type;
+  transition-duration: $trans-speed;
+  transition-delay: $trans-delay;
+}
+
+// Button '.btn'
+$dfBackgroundColor: $lightorange;
+$dfBorder: 2px solid transparent;
+$dfBorderRadius: 0;
+$dfBoxShadow: none;
+$dfColor: $orange;
+$dfFontFamily: $mainfont;
+$dfFontSize: 16px;
+$dfLetterSpacing: 0;
+$dfLineHeight: 1;
+$dfPadding: 15px 30px;
+$dfTextTransform: none;
+@mixin btn (
+  $backgroundColor: $dfBackgroundColor,
+  $border: $dfBorder,
+  $borderRadius: $dfBorderRadius,
+  $boxShadow: $dfBoxShadow,
+  $color: $dfColor,
+  $fontFamily: $dfFontFamily,
+  $fontSize: $dfFontSize,
+  $lineHeight: $dfLineHeight,
+  $letterSpacing: $dfLetterSpacing,
+  $padding: $dfPadding,
+  $textTransform: $dfTextTransform
+  ) {
+    all: unset;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    
+    background-color: $backgroundColor;
+    border: $border;
+    border-radius: $borderRadius;
+    box-shadow: $boxShadow;
+    color: $color;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    padding: $padding;
+    text-transform: $textTransform;
+    font-weight: 600;
+}
+
+.btn {
+  @include btn;
+  @include transition;
+  
+  &:hover {
+    background-color: $orange;
+    color: white;
+  }
+
+  @media screen and (max-width: $mediumdevice) {
+    font-size: 14px;
+  }
+}
+
+.btn-ghost {
+  @include btn;
+  @include transition;
+  background-color: transparent;
+  color: $dfBackgroundColor;
+  border-color: $dfBackgroundColor;
+  
+  &:hover {
+    background-color: $dfBackgroundColor;
+    color: white;
+  }
+}

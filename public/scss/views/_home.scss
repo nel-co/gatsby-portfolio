@@ -1,0 +1,174 @@
+body.home {
+  
+  section.hero {
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: $beige;
+    flex-direction: column;
+    position: relative;
+
+    .banner {
+      position: relative;
+      height:60%;
+      width: 100%;
+      top: 0;   
+      
+      @media screen and (max-width: $mediumdevice) {
+        height: 50%;
+      }
+
+      @media screen and (max-width: $smalldevice) {
+        height: 40%;
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: block;
+        max-width: 750px;
+        padding: $gutter $gutter 0;
+      }
+
+      svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: block;
+        max-width: 750px;
+        padding: $gutter $gutter 0;
+      }
+    }
+
+    .banner-text {
+      height: 40%;
+      text-align: center;
+      padding: 0 $gutter;
+
+      .btn {
+        background-color: $orange;
+        color: white;
+
+        &:hover {
+          background-color: darken($orange, 8%);
+        }
+      }
+
+      @media screen and (max-width: $mediumdevice) {
+        height: 50%;
+      }
+
+      @media screen and (max-width: $smalldevice) {
+        height: 60%;
+      }
+    }
+  }
+
+  section.portfolio {
+    
+    h2 {
+      margin-bottom: $gutter;
+
+      @media screen and (max-width: $mediumdevice) {
+        text-align: center;
+      }
+    }
+
+    div.item {
+      margin-bottom: $gutter;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .reveal-wrapper {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+
+        &.is-revealing {
+        
+          .reveal-block {
+  
+            &::before {
+              transform: scaleX(1);
+            }
+          }
+        }
+        &.is-visible {
+        
+          .reveal-block {
+            background: transparent;
+
+            &::before {
+              transform: translateX(101%);
+            }
+          }
+        }
+      }
+
+      .reveal-block {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 101%;
+        background: $beige;
+
+        &::before {
+          position: absolute;
+          content: '';
+          transition: all .2s ease;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: $orange;
+          transition-property: transform;
+          transition-duration: 0.2s;
+
+          transform: scaleX(0);
+          transform-origin: 0% 100%;
+        }
+      }
+    }
+
+    div.info {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 20px;
+      
+      @media screen and (max-width: $mediumdevice) {
+        flex-direction: column;
+        padding: 0;
+      }
+
+      p {
+        width: 60%;
+        max-width: 600px;
+        margin: 0;
+
+        @media screen and (max-width: $mediumdevice) {
+          width: 100%;
+          margin: 15px 0;
+        }
+      }
+
+      div.btn-wrapper {
+        width: 40%;
+        text-align: right;
+
+        @media screen and (max-width: $mediumdevice) {
+          width: 100%;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+}

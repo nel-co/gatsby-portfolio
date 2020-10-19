@@ -1,0 +1,102 @@
+// Default structure for Gravity Forms
+.gform_wrapper {
+	.gform_body {
+		width: 100% !important;
+
+		ul.gform_fields {
+			li.gfield {
+				padding-right: 0;
+
+				&.no-label {
+					label,
+					label.gfield_label {
+						display: none !important;
+					}					
+				}
+
+				// Labels
+				label,
+				label.gfield_label {
+					font-family: $mainfont;
+					font-weight: 700;
+					font-size: 18px;
+					color: $primary;
+
+					// Required marks
+					.gfield_required {
+						display: none;
+					}
+				}
+
+				// Inputs
+				div.ginput_container {
+
+					// General
+					input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
+					textarea {
+						@include transition;
+						font-family: $mainfont;
+						font-size: 18px;
+						padding: 1.25em;
+						max-width: 100%;
+						outline: 0;
+						border: solid 1px $primary;
+						width: 100%;
+						font-weight: 400;
+						margin: 0 0 15px;						
+
+						&:focus {
+							border-color: $primary;
+						}
+					}
+
+					// Checkboxes
+					.gfield_checkbox {
+						input[type="checkbox"] {
+							margin-top: 0;
+							margin-right: .3em;
+						}
+					}
+				}
+			}
+
+			// Multicolumn layout
+			.multicolumn-wrapper {
+				ul {
+					li {
+						float: left;
+						width: 50%;
+						clear: none;
+
+						&:first-child {
+							padding-right: 2.5%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.gform_footer {
+		margin: 0 !important;
+
+		// Buttons
+		input[type="submit"] {
+			@include btn;
+		}
+	}
+
+	// Placeholder styling
+	::-webkit-input-placeholder {
+	   color: $primary;
+	}
+	:-moz-placeholder {
+	   color: $primary;  
+	}
+	::-moz-placeholder {
+	   color: $primary;  
+	}
+	:-ms-input-placeholder {  
+	   color: $primary;  
+	}
+}

@@ -1,0 +1,79 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $mainfont;
+  font-size: 16px;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+svg {
+  animation: all .2s ease forwards;
+  display: block;
+}
+
+section {
+  padding: $sectionpadding 0;
+
+  @media screen and (max-width: $mediumdevice) {
+    padding: $sectionpadding/2 0;
+  }
+}
+
+$borderwidth: 20px;
+.border {
+  position: fixed;
+  background: $primary;
+  z-index: 99;
+
+  &.top {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $borderwidth;
+  }
+
+  &.bottom {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: $borderwidth;
+  }
+
+  &.left {
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    width: $borderwidth;
+  }
+  
+  &.right {
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    width: $borderwidth;
+  }
+}
+
+body .container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1140px;
+}

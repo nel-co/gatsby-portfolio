@@ -1,0 +1,94 @@
+section.footer-cta {
+  background: $green;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  a {
+    color: white;
+    width: 25%;
+    text-align: center;
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+
+    &:nth-of-type(1) {
+      background-color: $orange;
+    }
+    &:nth-of-type(2) {
+      background-color: #1152e5;
+    }
+    &:nth-of-type(3) {
+      background-color: #ffb509;
+    }
+    &:nth-of-type(4) {
+      background-color: $green;
+    }
+
+    &:hover {
+      background-color: $beige;
+      color: $primary;
+    }
+
+    @media screen and (max-width: $mediumdevice) {
+      width: 50%;
+      padding: 30px;
+      text-align: center;
+    }
+
+    i {
+      font-size: 26px;
+      opacity: .75;
+
+      @media screen and (max-width: $smalldevice) {
+        font-size: 16px;
+      }
+    }
+
+    span {
+      font-size: 15px;
+      padding-top: 5px;
+      font-weight: 600;
+    }
+  }
+
+}
+
+section.footer-text {
+  background-color: $primary;
+
+  .container {
+    max-width: 740px;
+    text-align: center;
+  }
+
+  h2, p {
+    color: $beige;
+  }
+
+  .btn {
+    background-color: $orange;
+    color: white;
+
+    &:hover {
+      background-color: darken($orange, 8%);
+    }
+  }
+
+}
+
+footer {
+  padding: 20px 0 25px;
+  text-align: center;
+  background: $primary;
+  color: $beige;
+  font-size: 14px;
+
+  @media screen and (max-width: $smalldevice) {
+    // padding-bottom: $mobilebarheight;
+  }
+}
